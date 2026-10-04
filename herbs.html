@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herbs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="relative bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <a href="/" class="flex items-center shrink min-w-0">
+            <img src="./images/logo.png" alt="Greenden Nursery" class="h-7 w-auto max-w-full sm:h-8 md:h-10">
+        </a>
+        <div class="flex items-center justify-between text-right">
+            <button id="menuBtn" aria-label="Toggle menu" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" width="30" height="30">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+
+            <ul id="menu"
+                class="hidden md:hidden absolute left-0 top-full w-full flex-col gap-3 bg-green-200 px-4 pb-4">
+                <li class="bg-green-900 text-white p-2">
+                    <a class="hover:underline hover:text-black" href="index.html">Home</a>
+                </li>
+                <li class="bg-green-900 text-white p-2">
+                    <a class="hover:underline hover:text-black" href="product.html">Products</a>
+                </li>
+                <li class="bg-green-900 text-white p-2">
+                    <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+                </li>
+                <li class="bg-green-900 text-white p-2">
+                    <a class="hover:underline hover:text-black" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="about.html">About</a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        const btn = document.getElementById('menuBtn');
+        const menu = document.getElementById('menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+    </script>
+    <section class="p-4 ">
+        <img src="./images/herbs/herb.jpg">
+        <h1 class="font-bold mt-5 text-3xl text-center">Herbs</h1>
+        <div class="border-2 border-gray-300 p-2 mx-auto max-w-2xl mt-2"><input class="w-full flex-1 outline-none ml-0" type="text" placeholder="Search for a product" /></div>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 mt-10 gap-5 place-items-center">
+            <div>
+                <img src="./images/herbs/aloe-vera.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Aloe Vera</h1>
+                <p>₹200 <del>399</del></p>
+                <p>⭐⭐⭐⭐ 347 reviews</p>
+                <button class="border-2 border-gray-800 p-1 bg-black text-white mt-2">Add Cart</button>
+            </div>
+            <div>
+                <img src="./images/herbs/basil.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Sweet Basil</h1>
+                <p>₹100 <del>399</del></p>
+                <p>⭐⭐⭐⭐ 417 reviews</p>
+                <button class="border-2 border-gray-800 p-1 bg-black text-white mt-2">Add Cart</button>
+            </div>
+            <div>
+                <img src="./images/herbs/coriander.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Coriander</h1>
+                <p>₹200 <del>399</del></p>
+                <p>⭐⭐⭐⭐ 347 reviews</p>
+                <button class="border-2 border-gray-800 p-1 bg-black text-white mt-2">Add Cart</button>
+            </div>
+            <div>
+                <img src="./images/herbs/curry-leaf.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Curry Leaf</h1>
+                <p>₹100 <del>399</del></p>
+                <p>⭐⭐⭐⭐ 417 reviews</p>
+                <button class="border-2 border-gray-800 p-1 bg-black text-white mt-2">Add Cart</button>
+            </div>
+            <div>
+                <img src="./images/herbs/lemongrass.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Lemongrass</h1>
+                <p>₹200 <del>399</del></p>
+                <p>⭐⭐⭐⭐ 347 reviews</p>
+                <button class="border-2 border-gray-800 p-1 bg-black text-white mt-2">Add Cart</button>
+            </div>
+            <div>
+                <img src="./images/herbs/mint.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Mint</h1>
+                <p>₹100 <del>399</del></p>
+                <p>⭐⭐⭐⭐ 417 reviews</p>
+                <button class="border-2 border-gray-800 p-1 bg-black text-white mt-2">Add Cart</button>
+            </div>
+            <div>
+                <img src="./images/herbs/oregano.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Oregano</h1>
+                <p>₹200 <del>399</del></p>
+                <p>⭐⭐⭐⭐ 347 reviews</p>
+                <button class="border-2 border-gray-800 p-1 bg-black text-white mt-2">Add Cart</button>
+            </div>
+            <div>
+                <img src="./images/herbs/rosemary.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Rosemary</h1>
+                <p>₹100 <del>399</del></p>
+                <p>⭐⭐⭐⭐ 417 reviews</p>
+                <button class="border-2 border-gray-800 p-1 bg-black text-white mt-2">Add Cart</button>
+            </div>
+            <div>
+                <img src="./images/herbs/thyme.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Thyme</h1>
+                <p>₹200 <del>399</del></p>
+                <p>⭐⭐⭐⭐ 347 reviews</p>
+                <button class="border-2 border-gray-800 p-1 bg-black text-white mt-2">Add Cart</button>
+            </div>
+            <div>
+                <img src="./images/herbs/tulsi.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Tulsi</h1>
+                <p>₹100 <del>399</del></p>
+                <p>⭐⭐⭐⭐ 417 reviews</p>
+                <button class="border-2 border-gray-800 p-1 bg-black text-white mt-2">Add Cart</button>
+            </div>
+        </div>
+        <section>
+            <!--Footer section-->
+            <div class="p-4 text-white mt-5" style="background-color:#0e580e">
+                <div class="md:flex gap-20 justify-center">
+                    <div>
+                        <h1 class="font-bold text-xl">Bestsellers</h1>
+                        <div class=" text-green-200 mt-2 mb-2">
+                            <p>Bestsellers in Gardening</p>
+                            <p>Best Seller Plants</p>
+                            <p>Best Seller Seeds</p>
+                            <p>Best Seller Soil and Fertilizer</p>
+                            <p>Best Seller Planters</p>
+                            <p>Best Seller Pebbles</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-xl">Blogs</h1>
+                        <div class="text-green-200 mt-2 mb-2">
+                            <p>Plant Talk</p>
+                            <p>Kitchen Gardening</p>
+                            <p>Sustainable Living</p>
+                            <p>Top 10 Plants</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-xl">About</h1>
+                        <div class="text-green-200 mt-2 mb-2">
+                            <P>About Nurserylive</P>
+                            <P>Contact us</P>
+                            <P>Privacy Policy</P>
+                            <P>Refund Policy</P>
+                            <p>Shipping Policy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialmedia flex gap-3 mt-5 justify-center items-center">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+        </section>
+</body>
+</html>
